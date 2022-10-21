@@ -16,8 +16,7 @@ const Hompage = () => {
     <>
       <Header />
       <Hero />
-      <MintSection />
-      <StakingSection />
+      
       <Footer />
       {authState.loginPop && <Login />}
       {authState.signupPop && <Signup />}
