@@ -22,7 +22,7 @@ const Footer = () => {
               <div>
                 <h4>Links</h4>
                 <a
-                  href="https://www.gophermines.com/doc/GopherMines.pdf"
+                  href={require("../../assets/GopherMines.pdf")}
                   target="_blank"
                   rel="noreferrer"
                 >
