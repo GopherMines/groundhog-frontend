@@ -22,7 +22,8 @@ const Footer = () => {
               <div>
                 <h4>Links</h4>
                 <a
-                  href={require("../../assets/GopherMines.pdf")}
+                  href="/GopherMines.pdf"
+                  download
                   target="_blank"
                   rel="noreferrer"
                 >
