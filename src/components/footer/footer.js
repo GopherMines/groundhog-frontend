@@ -22,8 +22,8 @@ const Footer = () => {
               <div>
                 <h4>Links</h4>
                 <a
-                  href="/GopherMines.pdf"
-                  download
+                  href="https://nft-images-ghog.s3.us-west-1.amazonaws.com/GopherMines.pdf"
+           
                   target="_blank"
                   rel="noreferrer"
                 >
