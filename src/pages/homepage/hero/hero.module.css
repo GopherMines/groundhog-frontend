@@ -8,12 +8,12 @@
   top: 30px;
   right: 0;
   position: absolute;
-  background: url(../../../assets/Mone1.gif);
-  background-position: left;
-  background-size: cover;
+  background: url(../../../assets/Mine1.gif);
+  background-position: center;
+  background-size: 90%;
   background-repeat: no-repeat;
-  width: 90%x;
-  height: 90%;
+  width: 100%x;
+  height: 100%;
   z-index: 0;
 }
 
