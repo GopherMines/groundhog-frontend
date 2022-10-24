@@ -8,12 +8,12 @@
   top: 30px;
   right: 0;
   position: absolute;
-  background: url(../../../assets/hero.png);
+  background: url(../../../assets/Mone1.gif);
   background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 145px;
-  height: 700px;
+  width: 90%x;
+  height: 90%;
   z-index: 0;
 }
 
