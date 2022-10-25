@@ -11,8 +11,8 @@ const Hero = () => {
           <div className={styles.heroTexts}>
             <h1>Gopher Mines</h1>
             <p>
-              Mint Gopher NFTs Mint GroundHog NFTs Mint GroundHog NFTsMint
-              GroundHog NFTsMint GroundHog NFTsMint GroundHog NFTs
+                          Gopher Mines Club - Beta Test
+                          Proof of Concept
             </p>
             <div className={styles.detailGrid}>
               <p>Mint Gopher NFTs</p>
