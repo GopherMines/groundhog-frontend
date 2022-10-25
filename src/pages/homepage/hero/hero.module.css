@@ -5,8 +5,8 @@
 }
 
 .heroImage {
-  top: 30px;
-  right: 0;
+  top: 0px;
+  right: 0px;
   position: absolute;
   background: url(../../../assets/Mine1.gif);
   background-position: center;
