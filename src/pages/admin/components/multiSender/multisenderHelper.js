@@ -27,7 +27,7 @@ export const handleMultisending = async (dispatch, data, setLoading) => {
             currentDetails.forEach((item, index) => {
               const itemArr = item.split(":");
               receiverArr.push(itemArr[0].trim());
-              amountArr.push(String(Number(itemArr[1].trim()) * 10 ** 18));
+              amountArr.push(String(Number(itemArr[1].trim()) * 10 ** 6));
 
               if (
                 receiverArr.length === index + 1 &&
@@ -70,7 +70,7 @@ export const checkApproved = async (address, setApproved) => {
       //debugger;
       const response = await contract.allowance(address, nftContract);
       const allowance = BigNumber.from(`${response._hex}`).toString();
-      allowance >= 100000 * 10 ** 18 ? setApproved(true) : setApproved(false);
+      allowance >= 100000000 * 10 ** 6 ? setApproved(true) : setApproved(false);
     } catch (error) {
       console.log("error", error);
     }
