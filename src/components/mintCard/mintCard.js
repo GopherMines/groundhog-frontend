@@ -34,7 +34,7 @@ const MintCard = ({ data }) => {
         //debugger;
         const response = await contract.allowance(address, mintContract);
         const allowance = BigNumber.from(`${response._hex}`).toString();
-        allowance >= 100000 * 10 ** 18 ? setApprove(true) : setApprove(false);
+        allowance >= 100000 * 10 ** 6 ? setApprove(true) : setApprove(false);
         setNotReady(false);
       } catch (error) {
         console.log("error", error);
@@ -54,7 +54,7 @@ const MintCard = ({ data }) => {
         //debugger;
         const response = await contract.approve(
           mintContract,
-          "100000000000000000000000000"
+          "1000000000000000"
         );
         await response.wait();
 
