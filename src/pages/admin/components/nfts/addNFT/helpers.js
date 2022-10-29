@@ -37,7 +37,7 @@ export const handleSubmission = async (
 
     const body = {};
     for (const key of form.keys()) {
-      body[key] = form.get(key);
+      if (key !== "meta") body[key] = form.get(key);
     }
 
     const data = await apiRequest("collection", body, "post", auth);
@@ -60,7 +60,7 @@ export const handleSubmission = async (
   } else if (addedNFT && !updateNFT) {
     const nftId = getFromLocalStorage("nftId");
     const fee = form.get("cost");
-    const uri = form.get("image");
+    const uri = form.get("meta");
     const percentage = form.get("percentage");
     const name = form.get("nftName");
 

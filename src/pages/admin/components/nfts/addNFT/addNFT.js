@@ -66,6 +66,15 @@ const AddNFT = () => {
             />
           </label>
           <label>
+            JSON Url
+            <input
+              name="meta"
+              type="text"
+              placeholder="https://mynftmeta.json"
+              required
+            />
+          </label>
+          <label>
             Cost
             <input name="cost" type="tel" placeholder="Cost" required />
           </label>
