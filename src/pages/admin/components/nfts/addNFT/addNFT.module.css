@@ -122,11 +122,26 @@
   cursor: pointer;
 }
 
+.loginPop::-webkit-scrollbar {
+  width: 0.3em;
+}
+
+.loginPop::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+}
+
+.loginPop::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #cf754a 0%, #d89b5a 100%);
+  outline: none;
+}
+
 @media only screen and (min-width: 545px) {
   .loginPop {
     left: calc(50% - 220px);
     min-width: 350px;
     max-width: max-content;
-    padding: 20px 60px 20px 60px;
+    padding: 20px 60px;
+    height: 90%;
+    overflow-y: scroll;
   }
 }
