@@ -39,7 +39,6 @@ export const handleSubmission = async (
     for (const key of form.keys()) {
       if (key !== "meta") body[key] = form.get(key);
     }
-
     const data = await apiRequest("collection", body, "post", auth);
 
     if (data.status === 200) {
@@ -147,6 +146,7 @@ export const handleSubmission = async (
         });
         dispatch(notificationActions.setMessage(error.message));
       }
+      localStorage.removeItem("nftId");
     }
   }
 };
