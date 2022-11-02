@@ -16,7 +16,7 @@
     "@walletconnect/web3-provider": "^1.8.0",
     "axios": "^0.27.2",
     "Buffer": "^0.0.0",
-    "ethers": "^5.6.2",
+    "ethers": "^5.7.2",
     "json2csv": "^5.0.7",
     "patch-package": "^6.4.7",
     "react": "^18.2.0",

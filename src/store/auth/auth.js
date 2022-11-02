@@ -33,7 +33,8 @@ const authSlice = createSlice({
       state.signupPop = false;
       state.loginPop = false;
       state.loggedIn = action.payload;
-
+      localStorage.removeItem("connection");
+      localStorage.removeItem("authState");
       setLocalStorage("authState", state);
     },
   },

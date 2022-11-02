@@ -116,6 +116,7 @@ export const checkApproved = async (address, setApproved, setNotReady) => {
 
     try {
       //debugger;
+      console.log(address, stakeContract);
       const response = await contract.isApprovedForAll(address, stakeContract);
       response ? setApproved(true) : setApproved(false);
       setNotReady(false);

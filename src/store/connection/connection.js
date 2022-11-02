@@ -14,6 +14,7 @@ const connectionSlice = createSlice({
   reducers: {
     setConnection(state, action) {
       state.connectionState = action.payload;
+      localStorage.removeItem("connection");
       setLocalStorage("connection", state);
     },
   },
