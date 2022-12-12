@@ -43,7 +43,7 @@ const StakedRow = ({ data }) => {
             <p>Stake date</p>
             <p>Token</p>
             <p>ID</p>
-            <p>Next Payment in</p>
+            {/* <p>Next Payment in</p> */}
             <p>Unlock Date</p>
             <p>Action</p>
           </div>
@@ -61,7 +61,7 @@ const StakedRow = ({ data }) => {
                 <span>{date}</span>
                 <span>{item.nftName}</span>
                 <span>{item.tokenId}</span>
-                <CountdownTimer time={item.next} payment={true} />
+                {/* <CountdownTimer time={item.next} payment={true} /> */}
                 <CountdownTimer time={item.unlock} payment={false} />
                 <button
                   onClick={() =>
