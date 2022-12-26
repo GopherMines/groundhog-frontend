@@ -59,7 +59,9 @@ const ConnectButton = () => {
           {!connected
             ? "Connect Wallet"
             : `${address.substr(0, 5)}...${address.substr(36)}`}
-        </button>
+              </button>
+              <img src="https://nft-images-ghog.s3.us-west-1.amazonaws.com/Polygon.gif" width="10%" height="10%" align="middle" />
+
       </div>
     </>
   );
