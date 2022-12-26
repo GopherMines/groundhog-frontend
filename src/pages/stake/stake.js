@@ -20,7 +20,7 @@ const Stake = () => {
       <SectionWidth>
         <section className={styles.stakeSection}>
           <h3>STAKE</h3>
-
+          <p>Make Sure You Are Connected to Polygon Chain</p>
           <Card>
             <div className={styles.stakeGrid}>
               <StakeCard />

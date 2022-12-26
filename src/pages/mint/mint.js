@@ -30,7 +30,7 @@ const Mint = () => {
       <SectionWidth>
         <section className={styles.mintSection}>
           <h3>MINT</h3>
-
+          <p>Make Sure You Are Connected to Polygon Chain</p>
           <Card>
             <div className={styles.MintGrid}>
               {NFTs.map((nft) => {
