@@ -10,10 +10,10 @@
   position: absolute;
   background: url(../../../assets/Mine1.gif);
   background-position: center;
-  background-size: 100%;
+  background-size: 90%;
   background-repeat: no-repeat;
-  width: 100%x;
-  height: 100%;
+  width: 50%x;
+  height: 75%;
   z-index: 0;
 }
 
@@ -24,9 +24,9 @@
 
 .heroTexts h1 {
   font-weight: 700;
-  font-size: 55px;
+  font-size: 50px;
   line-height: 69px;
-  max-width: 313px;
+  max-width: 550px;
   color: #cf754a;
 }
 .heroTexts > p {
