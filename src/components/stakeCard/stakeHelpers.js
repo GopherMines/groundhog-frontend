@@ -46,7 +46,7 @@ export const handleStake = async (
         const response = await contract.stake(
           nftContract,
           availableHog[0],
-          stakedurStamp.getTime()
+          stakedurStamp.getTime() - today.getTime()
         );
 
         const receipt = await response.wait();
