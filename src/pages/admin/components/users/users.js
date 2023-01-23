@@ -73,7 +73,7 @@ const Users = () => {
     const url = window.URL.createObjectURL(new Blob([blob]));
     const link = document.createElement("a");
     link.href = url;
-    link.setAttribute("download", `payments.csv`);
+    link.setAttribute("download", `stake.csv`);
     // 3. Append to html page
     document.body.appendChild(link);
     // 4. Force download
