@@ -57,6 +57,31 @@ const Users = () => {
     link.parentNode.removeChild(link);
   };
 
+  const handleStakeCSV = async (e) => {
+    const response = await axios({
+      method: "get",
+      url: "https://api.gophermines.com/stake/stakecsv",
+      headers: {
+        Authorization: `Bearer ${authState.loggedIn.token}`,
+      },
+      responseType: "blob",
+    });
+
+    const blob = response.data;
+
+    // 2. Create blob link to download
+    const url = window.URL.createObjectURL(new Blob([blob]));
+    const link = document.createElement("a");
+    link.href = url;
+    link.setAttribute("download", `payments.csv`);
+    // 3. Append to html page
+    document.body.appendChild(link);
+    // 4. Force download
+    link.click();
+    // 5. Clean up and remove the link
+    link.parentNode.removeChild(link);
+  };
+
   useEffect(() => {
     const getData = async () => {
       const data = await apiRequest(
@@ -110,6 +135,9 @@ const Users = () => {
           })}
         <button onClick={handlePullCSV} className={styles.paymentsButton}>
           Get Users CSV
+        </button>
+        <button onClick={handleStakeCSV} className={styles.paymentsButton}>
+          Get Staked CSV
         </button>
       </div>
       <div className={styles.paginationContainer}>
